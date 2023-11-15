@@ -1,1 +1,14 @@
-
+#include <iostream>
+using namespace std;
+int main() {
+    int a,summ=1,b;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите число : " ;
+    cin >> a ;
+    b = a;
+    while (a != 0) {
+        summ *= a;
+        a -= 1;
+    }
+    cout << " факториал " << b << " равен: " << summ << endl;
+}

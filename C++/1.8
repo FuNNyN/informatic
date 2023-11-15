@@ -1,1 +1,16 @@
-
+#include <iostream>
+using namespace std;
+int main() {
+    int a;
+    setlocale(LC_ALL, "Russian");
+    cout << "Введите число : " ;
+    cin >> a ;
+    for (int i = 2; i <= a-1; i++) 
+    {
+        if (a % i == 0) 
+        {
+            cout << "число не простое";
+            return 0;
+        }
+    }
+    cout << "число простое" << endl;

@@ -1,14 +1,11 @@
 #include <iostream>
 using namespace std;
 int main() {
-    int a,summ=1,b;
+    int a;
     setlocale(LC_ALL, "Russian");
-    cout << "Введите число : " ;
-    cin >> a ;
-    b = a;
-    while (a != 0) {
-        summ *= a;
-        a -= 1;
+    cout << "Таблица умножения для числа : ";
+    cin >> a;
+    for (int i = 1; i < 11; i++) {
+        cout << a << " * " << i << " = " << a * i << endl;
     }
-    cout << " факториал " << b << " равен: " << summ << endl;
 }
